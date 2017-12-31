@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import Jumbotron from "./Jumbotron.js"
 import Sidebar from "./sidebar.js";
 import Corine from "./images/Corine.jpg"
 import Jamye from "./images/Jamye.jpg"
@@ -45,6 +46,7 @@ class ClassMate extends Component {
   render() {
     return (
 <div>
+<Jumbotron />
 <Sidebar />     
 <br />
 <div className = "PhotoBox">

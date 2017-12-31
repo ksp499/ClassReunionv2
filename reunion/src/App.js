@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {BrowserRouter as Router, Route, Redirect} from "react-router-dom";
 import Landing from "./Landing.js";
-import RegPage from "./components/pages/RegPage.js";
+import RegPage from "./components/RegPage.js";
 import Gallery from "./components/ClassMate.js";
 import Main from "./mainPage.js";
 import Sidebar from "./components/sidebar.js";

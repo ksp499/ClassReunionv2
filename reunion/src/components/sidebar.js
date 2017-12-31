@@ -9,13 +9,8 @@ import { Link } from 'react-router-dom'
 
 const Sidebar = () => (
  
-    <div style={{ display: 'flex' }}>
-      <div style={{
-        padding: '10px',
-        width: '15%',
-        heigth: '100%',
-        background: '#f0f0f0'
-      }}>
+    <div className= 'sidebar'>
+      
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           <li><Link to="./Main">Home</Link></li>
           <li><Link to="./Gallery">Classmates</Link></li>
@@ -27,7 +22,7 @@ const Sidebar = () => (
       
       
       </div>
-    </div>
+    
  
 )
 

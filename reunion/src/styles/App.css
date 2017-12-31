@@ -56,3 +56,35 @@
   background-image: 200px;
   height: 200px;
 }
+
+.jumbotron{
+
+  color: blue;
+  text-align: center;
+}
+
+.sidebar{
+        float: left;
+        padding: 10px;
+        width: 12%;
+        background: #f0f0f0;
+}
+
+.panel{
+  float: right;
+  width: 80%;
+  margin-right: 35px;
+}
+
+.header{
+  font-size: 24px;
+}
+
+.entry{
+  color: white;
+}
+
+.inField{
+  margin-left: 15px;
+  vertical-align: right;
+}
