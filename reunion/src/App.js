@@ -5,7 +5,8 @@ import RegPage from "./components/RegPage.js";
 import Gallery from "./components/ClassMate.js";
 import Main from "./mainPage.js";
 import Sidebar from "./components/sidebar.js";
-
+import Pgallery from "./components/ClassParents.js";
+import Faculty from "./components/Faculty.js";
 
 // if something is true, that means is logged in
 // send them to the Dashboard
@@ -40,6 +41,8 @@ class App extends React.Component {
 						<PrivateRoute exact path = '/Main' component = {Main}/>
 						<Route exact path = '/Gallery' component = {Gallery}/>
 						<Route exact path = '/Sidebar' component = {Sidebar}/>
+						<Route exact path = '/Pgallery' component = {Pgallery}/>
+						<Route exact path = '/Faculty' component = {Faculty}/>
 
 					</div>
 				</Router>

@@ -42,6 +42,11 @@ class RegPage extends Component {
                 <p className ='entry'> Last Name: <input className = 'inField' type="text" name = 'lastName' onChange={this.getValue}/></p> 
                 <p className ='entry'>   Address:   <input className = 'inField' type="text" name = 'Address' onChange={this.getValue}/></p> 
                 <p className ='entry'>City:   <input className = 'inField' type="text" name = 'City' onChange={this.getValue}/></p> 
+                <p className ='entry'> State: <input className = 'inField' type="text" name = 'State' onChange={this.getValue}/></p> 
+                <p className ='entry'> Zip Code: <input className = 'inField' type="text" name = 'zipCode' onChange={this.getValue}/></p> 
+                <p className ='entry'> User Name: <input className = 'inField' type="text" name = 'userName' onChange={this.getValue}/></p> 
+                <p className ='entry'> Password: <input className = 'inField' type="text" name = 'Password' onChange={this.getValue}/></p> 
+
              <button onClick={this.getAllState}>Send </button>
             </form>
             <Link to = '/'>

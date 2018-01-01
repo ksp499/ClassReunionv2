@@ -141,7 +141,7 @@ class ClassMate extends Component {
 
 <div className = "PhotoBox">
 <img src = {DLynn} alt="Coming soon" className = "photo" />
-          <h5>D Lynn Eubanks
+          <h5>D'Lynn Eubank
             <div>
               <small>Quote</small>
             </div>

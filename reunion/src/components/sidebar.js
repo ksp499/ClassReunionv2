@@ -14,7 +14,8 @@ const Sidebar = () => (
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           <li><Link to="./Main">Home</Link></li>
           <li><Link to="./Gallery">Classmates</Link></li>
-          <li><Link to="/Teachers">Teachers</Link></li>
+          <li><Link to="./Pgallery">Parents</Link></li>
+          <li><Link to="/Faculty">Faculty</Link></li>
           <li><Link to="/Music">Music</Link></li>
         </ul>
 
