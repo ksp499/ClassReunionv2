@@ -1,0 +1,96 @@
+
+
+
+
+.App {
+
+  text-align: center;
+
+}
+
+.App-logo {
+  
+  height: 200px;
+}
+
+.App-header {
+  text-align: center;
+  font-size: 48px;
+  background-color: blue;
+  height: 60px;
+  padding: 20px;
+  color: white;
+
+}
+
+.App-title {
+  margin-top: 10px;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.App-intro {
+  margin-top: 40px;
+  color: white;
+  font-size: 35px;
+}
+
+#UsrData{
+  font-size: 18px;
+}
+
+.photo{
+  height: auto; 
+    width: auto; 
+    max-width: 150px; 
+    max-height: 150px;
+    float: left;
+}
+
+.PhotoBox{
+  margin: 20px;
+  float: left;
+}
+
+.logo {
+  background-image: 200px;
+  height: 200px;
+}
+
+.jumbotron{
+
+  color: blue;
+  text-align: center;
+}
+
+.sidebar{
+        float: left;
+        padding: 10px;
+        width: 12%;
+        background: #f0f0f0;
+}
+
+.panel{
+  float: right;
+  width: 80%;
+  margin-right: 35px;
+}
+
+
+
+.panel-body-poll{
+  color: blue;
+}
+
+.header{
+  font-size: 24px;
+}
+
+.entry{
+  color: white;
+}
+
+.inField{
+  margin-left: 15px;
+  vertical-align: right;
+}
