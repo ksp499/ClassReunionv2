@@ -14,24 +14,7 @@ class Poll extends Component {
 
  <div className = "panel-body">
             <ul>
-            	<li>
-            		Poll
-            	</li>
-            	<li>
-            		Poll
-            	</li>
-            	<li>
-            		Poll
-            	</li>
-            	<li>
-            		Poll
-            	</li>
-            	<li>
-            		Poll
-            	</li>
-            	<li>
-            		Poll
-            	</li>
+            	
             	<li>
             		Poll
             	</li>
