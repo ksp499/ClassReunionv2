@@ -1,12 +1,12 @@
 
 import React, { Component } from 'react';
-import Jumbotron from "./Jumbotron.js"
+import Jumbotron from "./Jumbotron.js";
 import Sidebar from "./sidebar.js";
-import Corine from "./images/Corine.jpg"
-import Jamye from "./images/Jamye.jpg"
-import Jan from "./images/Jan.jpg"
-import Kari from "./images/Kari.jpg"
-import Vick from "./images/Vick.jpg"
+import Corine from "./images/Corine.jpg";
+import Jamye from "./images/Jamye.jpg";
+import Jan from "./images/Jan.jpg";
+import Kari from "./images/Kari.jpg";
+import Vick from "./images/Vick.jpg";
 import Cindy from "./images/Cindy.jpg"
 import David from "./images/David.jpg"
 import Delia from "./images/Delia.jpg"
