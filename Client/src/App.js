@@ -4,7 +4,6 @@ import Landing from "./Landing.js";
 import RegPage from "./components/RegPage.js";
 import Gallery from "./components/ClassMate.js";
 import Main from "./mainPage.js";
-import Sidebar from "./components/sidebar.js";
 import Pgallery from "./components/ClassParents.js";
 import Faculty from "./components/Faculty.js";
 
@@ -40,7 +39,6 @@ class App extends React.Component {
 						<Route exact path = '/RegPage' component = {RegPage}/>
 						<PrivateRoute exact path = '/Main' component = {Main}/>
 						<Route exact path = '/Gallery' component = {Gallery}/>
-						<Route exact path = '/Sidebar' component = {Sidebar}/>
 						<Route exact path = '/Pgallery' component = {Pgallery}/>
 						<Route exact path = '/Faculty' component = {Faculty}/>
 

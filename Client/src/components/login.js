@@ -10,9 +10,9 @@ class Login extends Component {
         
         <div id= "submit"><input type="button" value="Login" name="Submit" onClick= "validate()" /> </div>
         <div id = "UsrData">
-        ENTER USER NAME <input type="text" name="username" /><br />
+        ENTER USER NAME <input className = "Udata" type="text" name="username" /><br />
         
-        ENTER PASSWORD <input type="password" name="pword" />
+        ENTER PASSWORD <input className = "Udata" type="password" name="pword" />
         
         </div>
         
