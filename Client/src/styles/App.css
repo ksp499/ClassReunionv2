@@ -36,7 +36,26 @@
 }
 
 #UsrData{
+  border-radius: 10px;
   font-size: 18px;
+}
+
+.Udata{
+    margin-bottom:10px;
+    border-radius: 10px;
+    height: 30px;
+    width: 30%;
+    font-size: 15px;
+}
+
+.LogBut{
+   border-radius: 10px;
+
+}
+
+.RegBut{
+    border-radius: 10px;
+    font-size: 15px;
 }
 
 .photo{
@@ -58,9 +77,10 @@
 }
 
 .jumbotron{
-
+  background: white;
   color: blue;
   text-align: center;
+  border-radius: 0px;
 }
 
 .sidebar{
@@ -68,6 +88,7 @@
         padding: 10px;
         width: 12%;
         background: #f0f0f0;
+        border-radius: 10px;
 }
 
 .panel{
@@ -76,9 +97,11 @@
   margin-right: 35px;
 }
 
-
-
 .panel-body-poll{
+  color: blue;
+}
+
+.panel-body{
   color: blue;
 }
 
@@ -88,13 +111,26 @@
 
 .entry{
   color: white;
+
 }
 
 .inField{
   margin-left: 15px;
   vertical-align: right;
+  color: blue;
+  border-radius: 10px;
 }
 
 .Footer{
-  position: right;
+  width: 100%;
+  text-align: center;
+  position: center;
+}
+
+.navbar{
+  margin-bottom: 0px;
+  border-radius: 0px;
+  position: center;
+  background-color: white;
+  color: blue;
 }

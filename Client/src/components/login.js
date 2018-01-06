@@ -8,7 +8,7 @@ class Login extends Component {
 
         <div>
         
-        <div id= "submit"><input type="button" value="Login" name="Submit" onClick= "validate()" /> </div>
+        <div id= "submit"><input className = "LogBut" type="button" value="Login" name="Submit" onClick= "validate()" /> </div>
         <div id = "UsrData">
         ENTER USER NAME <input className = "Udata" type="text" name="username" /><br />
         

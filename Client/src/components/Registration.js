@@ -7,7 +7,7 @@ class Registration extends Component {
     return (
 
         <div>
-        <Link to = '/RegPage'> <button>Register</button> </Link>
+        <Link to = '/RegPage'> <button className = "RegBut">Register</button> </Link>
         </div>
 		);
 	}

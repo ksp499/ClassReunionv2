@@ -1,7 +1,9 @@
 
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Jumbotron from "./Jumbotron.js"
-import Sidebar from "./sidebar.js";
+import NavBar from './Navbar.js'
+import Sidebar from "./sidebar.js"
+import Footer from "./footer.js"
 import Alana from "./images/Alana.jpg"
 import Vaughn from "./images/Vaughn.jpg"
 import Askey from "./images/Askey.jpg"
@@ -32,163 +34,166 @@ class Faculty extends Component {
   render() {
     return (
 <div>
+<NavBar />
 <Jumbotron />
 <Sidebar />     
 <br />
+
+
 <div className = "PhotoBox">
-<img src = {Alana} alt="Coming soon" className = "photo" />
-          <h5>Don Alana
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Alana} alt="Coming soon" />
+          <h5>Don Alana  
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Vaughn} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Vaughn} alt="Coming soon" />
           <h5>Delores Vaughn
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Askey} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Askey} alt="Coming soon" />
           <h5>Bob Askey
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Baker} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Baker} alt="Coming soon" />
           <h5>Royce Baker
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Burton} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Burton} alt="Coming soon" />
           <h5>Lynn Burton
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Corn} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Corn} alt="Coming soon" />
           <h5>Anne Corn
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {East} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={East} alt="Coming soon" />
           <h5>Shirley East
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Fant} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Fant} alt="Coming soon" />
           <h5>Janice Fant
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Franse} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Franse} alt="Coming soon" />
           <h5>Lucille Franse
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Hotze} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Hotze} alt="Coming soon" />
           <h5>Carol Hotze
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Montgomery} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Montgomery} alt="Coming soon" />
           <h5>Richard Montgomery
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Owen} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Owen} alt="Coming soon" />
           <h5>Jerry Dee Owen
           </h5>
            <br />
 </div>
       
 <div className = "PhotoBox">
-<img src = {Roanhaus} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Roanhaus} alt="Coming soon" />
           <h5>Bert Roanhaus
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Rudisill} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Rudisill} alt="Coming soon" />
           <h5>Christi Rudisill
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Whatley} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Whatley} alt="Coming soon" />
           <h5>Van Tom Whatley
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {White} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={White} alt="Coming soon" />
           <h5>Dorris White
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Naskey} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Naskey} alt="Coming soon" />
           <h5>Nelda Askey
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Boling} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Boling} alt="Coming soon" />
           <h5>Frances Boling
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Hargrove} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Hargrove} alt="Coming soon" />
           <h5>Joyce Hargrove
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {McDorman} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={McDorman} alt="Coming soon" />
           <h5>Larry McDorman
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Powen} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Powen} alt="Coming soon" />
           <h5>Pat Owen
           </h5>
            <br />
 </div>
 
 <div className = "PhotoBox">
-<img src = {Phillips} alt="Coming soon" className = "photo" />
+<img className="rounded-circle img-fluid d-block mx-auto photo" src={Phillips} alt="Coming soon" />
           <h5>Elizabeth Phillips
           </h5>
            <br />
 </div>
-
+  <Footer />
 </div>
         );
     }

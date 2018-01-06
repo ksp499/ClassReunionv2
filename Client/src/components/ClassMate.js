@@ -1,7 +1,9 @@
 
 import React, { Component } from 'react'
 import Jumbotron from "./Jumbotron.js"
+import NavBar from './Navbar.js'
 import Sidebar from "./sidebar.js"
+import Player from "./musicPlayer.js"
 import Footer from "./footer.js"
 import Corine from "./images/Corine.jpg"
 import Jamye from "./images/Jamye.jpg"
@@ -46,7 +48,9 @@ import Richard from "./images/Richard.jpg"
 class ClassMate extends Component {
   render() {
     return (
+
 <div>
+<NavBar />
 <Jumbotron />
 <Sidebar />     
 <br />
@@ -310,6 +314,7 @@ class ClassMate extends Component {
            </h5>
            <br />
 </div> 
+<Player />
 <Footer />
 </div>
         );
