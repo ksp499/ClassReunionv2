@@ -1,8 +1,10 @@
  
 
 import React, { Component } from 'react';
+import Comments from './comment.js'
 
-class Poll extends Component {
+
+class CommContain extends Component {
   render() {
     return (
 
@@ -13,15 +15,7 @@ class Poll extends Component {
           </div>
 
  <div className = "panel-body">
-            <ul>
-            	
-            	<li>
-            		Poll
-            	</li>
-            	<li>
-            		Poll
-            	</li>
-            </ul>
+            <Comments />
       </div>
       </div>
       </div>
@@ -29,4 +23,4 @@ class Poll extends Component {
       );
       }
 }
-  export default Poll;    
+  export default CommContain;    
