@@ -7,7 +7,6 @@ import Eubank from "./images/eubank.jpg"
 import Norton from "./images/nortons.jpg"
 import Walls from "./images/Walls.jpg"
 import NavBar from './Navbar.js'
-import Player from "./musicPlayer.js"
 
 
 
@@ -41,7 +40,6 @@ class ClassMate extends Component {
           </h5>
            <br />
 </div>
-<Player />
 <Footer />
 </div>
         );

@@ -1,10 +1,12 @@
 
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+
+
 import Corine from "./images/Corine.jpg"
-import Jamye from "./images/Jamye.jpg";
-import Jan from "./images/Jan.jpg";
-import Kari from "./images/Kari.jpg";
-import Vick from "./images/Vick.jpg";
+import Jamye from "./images/Jamye.jpg"
+import Jan from "./images/Jan.jpg"
+import Kari from "./images/Kari.jpg"
+import Vick from "./images/Vick.jpg"
 import Cindy from "./images/Cindy.jpg"
 import David from "./images/David.jpg"
 import Delia from "./images/Delia.jpg"
@@ -42,13 +44,13 @@ import Richard from "./images/Richard.jpg"
 
 
  const images = [Corine, Jamye, Jan, Kari, Vick, Cindy, David, Delia, Tim, DLynn, Dan, Linda, Maria, Steve, Keith, Penny, Russ, Keevin, Kathy, Sonia, Carlos, Rusty, Sandra, Terry, TimN, Dwayne, Clay, Sally, DwayneS, Shawn, Daren, Larry, Rhonda, Tracie, Peggy, Guy, Richard]
- const Caption = [ "Corine Ancria",]
+ const Caption = [ "Corine Ancria", "Jamye Berry",]
 const listItems = images.map((image) =>
   <img className="rounded-circle img-fluid d-block mx-auto photo" src= {image} alt="Coming soon" />
+)
 
-);
 
-  
+
 
 class Photo extends Component {
   render() {
@@ -59,13 +61,13 @@ class Photo extends Component {
 <div>
 
 <ul>{listItems}</ul>
-<div className = "PhotoBox">
 
-</div>
 
 </div>
         );
     }
   }
+
+
 
 export default Photo;

@@ -11,7 +11,7 @@ class CommContain extends Component {
 <div>
         <div className = "panel panel-default">
           <div className = "panel-heading">
-            <h3 className = "panel-title">What Kind of Party Do You Want?</h3>
+            <h3 className = "panel-title">It's Your Reunion, Lets Talk About It!</h3>
           </div>
 
  <div className = "panel-body">
@@ -20,7 +20,7 @@ class CommContain extends Component {
       </div>
       </div>
       
-      );
+        );
       }
 }
   export default CommContain;    

@@ -3,8 +3,9 @@ import React, { Component } from 'react'
 import Jumbotron from "./Jumbotron.js"
 import NavBar from './Navbar.js'
 import Sidebar from "./sidebar.js"
-import Player from "./musicPlayer.js"
 import Footer from "./footer.js"
+
+
 import Corine from "./images/Corine.jpg"
 import Jamye from "./images/Jamye.jpg"
 import Jan from "./images/Jan.jpg"
@@ -55,7 +56,6 @@ class ClassMate extends Component {
 <Sidebar />     
 <br />
 <br />
-
 <div className = "PhotoBox">
 <img className="rounded-circle img-fluid d-block mx-auto photo" src={Corine} alt="Coming soon" />
           <h5>Corine Ancira  
@@ -314,7 +314,6 @@ class ClassMate extends Component {
            </h5>
            <br />
 </div> 
-<Player />
 <Footer />
 </div>
         );
