@@ -134,3 +134,35 @@
   background-color: white;
   color: blue;
 }
+
+.Comment {
+  margin: 0%;
+  text-align: left;
+}
+
+.boxesSpace {
+    overflow: auto;
+}
+
+.CommentBox {
+  /*border: solid 1px;*/
+  width: 100%;
+  padding: 10px;
+  float: left;
+}
+
+.CommentInput{
+    text-align: left;
+}
+
+.commBut{
+    border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.SendBox{
+    border-radius: 10px;
+}

@@ -1,6 +1,6 @@
 
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import Jumbotron from "./Jumbotron.js"
 import NavBar from './Navbar.js'
 import Footer from './footer.js'
