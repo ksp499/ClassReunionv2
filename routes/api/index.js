@@ -1,10 +1,7 @@
 const router = require("express").Router();
-const usersController = require("../../controllers/usersController");
+const userRoutes = require("./users");
 
-router
-  .route("/users")
-  .get(usersController.findAll)
-  .post(usersController.create)
-  .delete(usersController.remove);
+// Book routes
+router.use("/users", userRoutes);
 
 module.exports = router;
