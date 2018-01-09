@@ -110,15 +110,22 @@
 }
 
 .entry{
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
   color: white;
+  font-size: 18px;
 
 }
 
 .inField{
+  margin-right: 15px;
   margin-left: 15px;
-  vertical-align: right;
   color: blue;
   border-radius: 10px;
+  
 }
 
 .Footer{
@@ -138,6 +145,7 @@
 .Comment {
   margin: 0%;
   text-align: left;
+  font-size: 18px;
 }
 
 .boxesSpace {
@@ -165,4 +173,15 @@ ul {
 
 .SendBox{
     border-radius: 10px;
+    font-size: 18px;
+}
+
+button{
+  margin-left: 35px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.regForm{
+    padding-left: 40px;
 }

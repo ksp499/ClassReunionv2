@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Jumbotron from "./Jumbotron.js"
@@ -39,7 +38,6 @@ class RegPage extends Component {
       };
 
       handleFormSubmit = event => {
-        event.preventDefault();
           API.saveUser({
             firstName: this.state.firstName,
             lastName: this.state.lastName,
@@ -64,18 +62,15 @@ class RegPage extends Component {
             <form className = 'regForm'>  
                 <p className ='entry'> First Name: <input className = 'inField' value={this.state.firstName}  name = 'firstName' onChange={this.handleInputChange}/></p> 
                 <p className ='entry'> Last Name: <input className = 'inField' value={this.state.lastName}  name = 'lastName' onChange={this.handleInputChange}/></p> 
-                <p className ='entry'>   Address:   <input className = 'inField' value={this.state.address}  name = 'Address' onChange={this.handleInputChange}/></p> 
+                <p className ='entry'>   Address: <input className = 'inField' value={this.state.address}  name = 'Address' onChange={this.handleInputChange}/></p> 
                 <p className ='entry'>City:   <input className = 'inField' value={this.state.city}  name = 'City' onChange={this.handleInputChange}/></p> 
                 <p className ='entry'> State: <input className = 'inField' value={this.state.state}  name = 'State' onChange={this.handleInputChange}/></p> 
                 <p className ='entry'> Zip Code: <input className = 'inField' value={this.state.zipCode}  name = 'zipCode' onChange={this.handleInputChange}/></p> 
                 <p className ='entry'> User Name: <input className = 'inField' value={this.state.userName}  name = 'userName' onChange={this.handleInputChange}/></p> 
                 <p className ='entry'> Password: <input className = 'inField' value={this.state.password}  name = 'password' onChange={this.handleInputChange}/></p> 
-
-             <button onClick={this.getAllState}>Send </button>
             </form>
             <Link to = '/'>
-            <button onClick={this.handleFormSubmit}>Submit</button> 
-           
+              <button onClick={this.handleFormSubmit}>Submit</button>    
            </Link>
         </div>
     );
