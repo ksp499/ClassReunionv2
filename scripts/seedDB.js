@@ -21,9 +21,28 @@ const userSeed = [
   }
 ];
 
+const commentSeed = [
+  {
+    userName: "ksp499",
+    comment: "This is Kyeong"
+  }
+];
+
 db.User
   .remove({})
   .then(() => db.User.collection.insertMany(userSeed))
+  .then(data => {
+    console.log(data.insertedIds.length + " records inserted!");
+    //process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
+db.Comment
+  .remove({})
+  .then(() => db.Comment.collection.insertMany(commentSeed))
   .then(data => {
     console.log(data.insertedIds.length + " records inserted!");
     process.exit(0);
