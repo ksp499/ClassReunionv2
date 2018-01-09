@@ -5,7 +5,6 @@ import Sidebar from "./components/sidebar.js"
 import Jumbotron from "./components/Jumbotron.js"
 import Panel from "./components/panel.js"
 import Poll from "./components/PollContainer.js"
-import Player from "./components/musicPlayer.js"
 import CommContain from "./components/CommentContainer.js"
 import Footer from "./components/footer.js"
 
