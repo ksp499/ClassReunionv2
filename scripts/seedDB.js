@@ -15,6 +15,7 @@ const userSeed = [
   {
     userName: "ksp499",
     password: "123456",
+    email: "ksp499@gmail.com",
     firstName: "Kyeong",
     lastName: "Park"
   }
