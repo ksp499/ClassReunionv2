@@ -6,6 +6,7 @@ import Gallery from "./components/ClassMate.js";
 import Main from "./mainPage.js";
 import Pgallery from "./components/ClassParents.js";
 import Faculty from "./components/Faculty.js";
+import Login from "./components/login.js";
 
 // if something is true, that means is logged in
 // send them to the Dashboard
@@ -27,15 +28,16 @@ const PrivateRoute = ({component: Component, ...rest}) => {
     );
 };
 
-
-
-
 class App extends React.Component {
+		state = {
+			isAuthenticated : false
+		}
+
 		render(){
 			return(
 				<Router>
 					<div>
-						<Route exact path='/' component = {Landing}/>
+						<Route exact path='/' component = {Landing} />
 						<Route exact path = '/RegPage' component = {RegPage}/>
 						<PrivateRoute exact path = '/Main' component = {Main}/>
 						<Route exact path = '/Gallery' component = {Gallery}/>

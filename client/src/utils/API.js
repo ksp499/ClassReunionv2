@@ -18,6 +18,9 @@ export default {
     console.log(userData);
     return axios.post("/api/users/", userData);
   },
+  validateUser: function(userName) {
+    return axios.get("/api/users/" + userName);
+  },
   // Saves a comment to the database
   saveComment: function(commentData) {
     return axios.post("/api/comment/", commentData);
