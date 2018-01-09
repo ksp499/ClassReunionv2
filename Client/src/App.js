@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import {BrowserRouter as Router, Route, Redirect} from "react-router-dom";
 import Landing from "./Landing.js";
 import RegPage from "./components/RegPage.js";
@@ -13,7 +13,7 @@ import Faculty from "./components/Faculty.js";
 
 
 
-const isAuthenticated = false;//set to false when backend is complete comming back from server, not logged in
+const isAuthenticated = true;//set to false when backend is complete comming back from server, not logged in
 
 const PrivateRoute = ({component: Component, ...rest}) => {
     return (
