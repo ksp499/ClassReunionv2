@@ -14,6 +14,10 @@ router
   .delete(usersController.remove);
 
 router
+  .route("/api/users/:id")
+  .get(usersController.findByUserName);
+
+router
   .route("/api/comments")
   .get(commentsController.findAll)
   .post(commentsController.create)

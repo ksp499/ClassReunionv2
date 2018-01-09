@@ -20,7 +20,7 @@ class Landing extends Component {
       
         </div>
         <Registration />
-        <Login />
+        <Login ath={false}/>
         
         
       
