@@ -62,10 +62,11 @@ class RegPage extends Component {
             <form className = 'regForm'>  
                 <p className ='entry'> First Name: <input className = 'inField' value={this.state.firstName}  name = 'firstName' onChange={this.handleInputChange}/></p> 
                 <p className ='entry'> Last Name: <input className = 'inField' value={this.state.lastName}  name = 'lastName' onChange={this.handleInputChange}/></p> 
-                <p className ='entry'>   Address: <input className = 'inField' value={this.state.address}  name = 'Address' onChange={this.handleInputChange}/></p> 
-                <p className ='entry'>City:   <input className = 'inField' value={this.state.city}  name = 'City' onChange={this.handleInputChange}/></p> 
+                <p className ='entry'> Address: <input className = 'inField' value={this.state.address}  name = 'Address' onChange={this.handleInputChange}/></p>
+                <p className ='entry'> City: <input className = 'inField' value={this.state.city}  name = 'city' onChange={this.handleInputChange}/></p>
                 <p className ='entry'> State: <input className = 'inField' value={this.state.state}  name = 'State' onChange={this.handleInputChange}/></p> 
-                <p className ='entry'> Zip Code: <input className = 'inField' value={this.state.zipCode}  name = 'zipCode' onChange={this.handleInputChange}/></p> 
+                <p className ='entry'> Zip Code: <input className = 'inField' value={this.state.zipCode}  name = 'zipCode' onChange={this.handleInputChange}/></p>
+                <p className ='entry'> Email: <input className = 'inField' value={this.state.email}  name = 'email' onChange={this.handleInputChange}/></p>
                 <p className ='entry'> User Name: <input className = 'inField' value={this.state.userName}  name = 'userName' onChange={this.handleInputChange}/></p> 
                 <p className ='entry'> Password: <input className = 'inField' value={this.state.password}  name = 'password' onChange={this.handleInputChange}/></p> 
             </form>

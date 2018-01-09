@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react'
 import Jumbotron from "./Jumbotron.js"
-import NavBar from './Navbar.js'
 import Sidebar from "./sidebar.js"
 import Footer from "./footer.js"
 
@@ -51,7 +50,6 @@ class ClassMate extends Component {
     return (
 
 <div>
-<NavBar />
 <Jumbotron />
 <Sidebar />     
 <br />

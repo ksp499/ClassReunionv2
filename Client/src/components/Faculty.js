@@ -1,9 +1,9 @@
 
 import React, { Component } from 'react'
 import Jumbotron from "./Jumbotron.js"
-import NavBar from './Navbar.js'
 import Sidebar from "./sidebar.js"
 import Footer from "./footer.js"
+
 import Alana from "./images/Alana.jpg"
 import Vaughn from "./images/Vaughn.jpg"
 import Askey from "./images/Askey.jpg"
@@ -34,7 +34,6 @@ class Faculty extends Component {
   render() {
     return (
 <div>
-<NavBar />
 <Jumbotron />
 <Sidebar />     
 <br />

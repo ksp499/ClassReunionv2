@@ -13,11 +13,12 @@ class Main extends Component {
     return (
 
        <div className="App">
-       <NavBar />
+      
        <Jumbotron />
         <Sidebar />
         <Panel />
         <CommContain />
+        <NavBar />
         <Footer />
        
         </div>

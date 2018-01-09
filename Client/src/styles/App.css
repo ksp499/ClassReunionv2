@@ -1,6 +1,17 @@
 
 
 
+#submit{
+  color: blue;
+}
+
+.Footer{
+  text-align: center;
+}
+
+.panel-title{
+  color: blue;
+}
 
 .App {
 
@@ -11,6 +22,10 @@
 .App-logo {
   
   height: 200px;
+}
+
+.App-logo-small{
+  height: 50px;
 }
 
 .App-header {
@@ -80,14 +95,15 @@
   background: white;
   color: blue;
   text-align: center;
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 .sidebar{
+  font-size: 1.25rem;
         float: left;
         padding: 10px;
         width: 12%;
-        background: #f0f0f0;
+        background: white;
         border-radius: 10px;
 }
 
@@ -135,11 +151,13 @@
 }
 
 .navbar{
+  width: 12%;
   margin-bottom: 0px;
-  border-radius: 0px;
+  border-radius: 10px;
   position: center;
   background-color: white;
   color: blue;
+  float: left;
 }
 
 .Comment {
@@ -153,7 +171,6 @@
 }
 
 .CommentBox {
-  /*border: solid 1px;*/
   width: 100%;
   padding: 10px;
   float: left;
@@ -177,6 +194,7 @@ ul {
 }
 
 button{
+  color: blue;
   margin-left: 35px;
   border-radius: 10px;
   font-size: 18px;
@@ -184,4 +202,8 @@ button{
 
 .regForm{
     padding-left: 40px;
+}
+
+.panel-heading{
+  background-color: white;
 }

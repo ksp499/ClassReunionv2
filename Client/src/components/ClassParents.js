@@ -6,17 +6,12 @@ import Footer from "./footer.js"
 import Eubank from "./images/eubank.jpg"
 import Norton from "./images/nortons.jpg"
 import Walls from "./images/Walls.jpg"
-import NavBar from './Navbar.js'
-
-
-
 
 
 class ClassMate extends Component {
   render() {
     return (
 <div>
-<NavBar />
 <Jumbotron />
 <Sidebar />     
 <br />
