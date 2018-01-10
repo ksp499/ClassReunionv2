@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Serve up static assets
-app.use(express.static("client/public"));
-app.use('/static', express.static(path.join(__dirname, 'Client/build')));
+app.use(express.static("Client/build"));
+// app.use('/static', express.static(path.join(__dirname, 'Client/build')));
 // Add routes, both API and view
 app.use(routes);
 
