@@ -23,6 +23,10 @@ export default {
   },
   // Saves a comment to the database
   saveComment: function(commentData) {
-    return axios.post("/api/comment/", commentData);
+    return axios.post("/api/comments/", commentData);
+  },
+  // Gets all comments
+  getComments: function() {
+    return axios.get("/api/comments/");
   }
 };

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import API from "../utils/API";
 
 class Comments extends Component {
   constructor() {
@@ -8,14 +8,25 @@ class Comments extends Component {
       commentBoxes: [],
       commentBoxId: 0
     };
-  }  
+  }
+
+  componentDidMount() {
+    this.loadComments();
+  }
+
+  loadComments = () => {
+    API.getComments()
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
+  }
+
   addNewCommentBox() {
     let newCommentBoxId = this.state.commentBoxId + 1;
     this.setState({commentBoxId: newCommentBoxId});
-    
-    let commentBox = <CommentBox key={this.state.commentBoxId}/>
+    let commentBox = <CommentBox key={this.state.commentBoxId} id={this.state.commentBoxId}/>
     this.setState({commentBoxes: this.state.commentBoxes.concat(commentBox)});
   }  
+
   render() {
     return (
       <div className="App">
@@ -39,15 +50,24 @@ class CommentBox extends Component {
     super(props);
     this.state = {
       comments: [],
-      commentId: 0
+      commentId: 0,
+      commentBoxId: props.id
     };
   }
   handleOnSubmit(commentText) {
     let newCommentId = this.state.commentId + 1;
     this.setState({commentId: newCommentId});
-    
+    console.log(this.state.commentBoxId);
     let comment = {id:this.state.commentId, author: 'me', text: commentText}
     this.setState({comments: this.state.comments.concat(comment)});
+
+    API.saveComment({
+      commentBoxId: this.state.commentBoxId,
+      userName: "me",
+      comment: commentText
+    })
+    .then()
+    .catch();
   }  
   render() {
     return (
