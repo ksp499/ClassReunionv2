@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Steer from './styles/Steer2.jpg';
+import Steer from './styles/Steer3.png';
 import './styles/App.css';
 import Registration from "./components/Registration.js";
-import Header from "./components/Header.js";
 import Login from "./components/login.js"
 
 class Landing extends Component {
@@ -10,8 +9,9 @@ class Landing extends Component {
     return (
       
       <div className="App">
-       <Header />
-        
+       
+       <h1 className = "App-header">Farwell Class of 78</h1>
+
         <div className="App-intro">
         Welcome
         </div>
