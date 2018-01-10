@@ -5,9 +5,7 @@ const Jumbotron = () => (
   <div className="jumbotron">
   	<img src={Steer} className="App-logo-small" alt="logo" />
     <h1>Farwell Class of 78</h1>
-    <p>
-  
-    </p>
+    
   </div>
 );
 

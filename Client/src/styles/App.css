@@ -93,8 +93,12 @@
 }
 
 .jumbotron{
-  background: white;
-  color: blue;
+  height: 250px;
+  background-image: url("Monument.JPG");
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; 
+  color: white;
   text-align: center;
   border-radius: 10px;
 }
