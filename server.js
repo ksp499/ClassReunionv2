@@ -10,11 +10,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Serve up static assets
 app.use(express.static("client/public"));
+app.use('/static', express.static(path.join(__dirname, 'Client/build')));
 // Add routes, both API and view
 app.use(routes);
 
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
+
+// // Express only serves static assets in production
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static('client/build'));
+// }
+
 // Connect to the Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/accountinfo",
