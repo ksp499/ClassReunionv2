@@ -6,7 +6,6 @@ import Gallery from "./components/ClassMate.js";
 import Main from "./mainPage.js";
 import Pgallery from "./components/ClassParents.js";
 import Faculty from "./components/Faculty.js";
-import Login from "./components/login.js";
 
 // if something is true, that means is logged in
 // send them to the Dashboard

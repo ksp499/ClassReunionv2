@@ -16,7 +16,6 @@ const Sidebar = () => (
           <li><Link to="./Gallery">Classmates</Link></li>
           <li><Link to="./Pgallery">Parents</Link></li>
           <li><Link to="./Faculty">Faculty</Link></li>
-          <li><Link to="./email">Contact Me</Link></li>
         </ul>
 
         
