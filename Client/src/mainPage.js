@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styles/App.css';
+import './index.css';
 import Sidebar from "./components/sidebar.js"
 import Jumbotron from "./components/Jumbotron.js"
 import Panel from "./components/panel.js"

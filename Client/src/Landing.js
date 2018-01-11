@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Steer from './styles/Steer3.png';
-import './styles/App.css';
 import Registration from "./components/Registration.js";
 import Login from "./components/login.js"
 
