@@ -11,7 +11,7 @@ const Sidebar = () => (
  
     <div className= 'sidebar'>
       
-        <ul style={{ listStyleType: 'none', padding: 0 }}>
+        <ul>
           <li><Link to="./Main">Home</Link></li>
           <li><Link to="./Gallery">Classmates</Link></li>
           <li><Link to="./Pgallery">Parents</Link></li>

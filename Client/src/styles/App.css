@@ -1,7 +1,10 @@
 
 
 
-
+.panel-default>.panel-heading{
+  background: transparent;
+  border: none;
+}
 
 
 .Footer{
@@ -95,8 +98,8 @@
   height: 250px;
   background-image: url("highschool.jpg");
   background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%; 
+  background-position: center;
+  background-size: 100%; 
   color: white;
   text-align: center;
   border-radius: 10px;
@@ -115,15 +118,12 @@
         border-radius: 10px;
 }
 
+
 .panel{
   float: right;
   width: 80%;
   margin-right: 35px;
   background: transparent;
-}
-
-.panel-body-poll{
-  color: blue;
 }
 
 .panel-body{
@@ -202,6 +202,8 @@
 
 ul {
   list-style: none;
+  padding: 0;
+
 }
 
 .SendBox{
@@ -223,11 +225,6 @@ button{
 .panel-heading{
   background:transparent;
 
-}
-
-button{
-  margin-left: 35px;
-  border-radius: 10px;
 }
 
 .regForm{
