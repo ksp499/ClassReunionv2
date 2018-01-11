@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.64314c53.css",
-  "main.css.map": "static/css/main.64314c53.css.map",
-  "main.js": "static/js/main.7c253947.js",
-  "main.js.map": "static/js/main.7c253947.js.map",
+  "main.css": "static/css/main.c6c339c1.css",
+  "main.css.map": "static/css/main.c6c339c1.css.map",
+  "main.js": "static/js/main.02090190.js",
+  "main.js.map": "static/js/main.02090190.js.map",
   "static/media/Boling.jpg": "static/media/Boling.28b7b30c.jpg",
   "static/media/Carlos.jpg": "static/media/Carlos.14309417.jpg",
   "static/media/Cindy.jpg": "static/media/Cindy.4daf0b87.jpg",
@@ -35,7 +35,7 @@
   "static/media/Sandra.jpg": "static/media/Sandra.eda68dd9.jpg",
   "static/media/Shawn.jpg": "static/media/Shawn.0dfd68b3.jpg",
   "static/media/Sonia.jpg": "static/media/Sonia.43da90ab.jpg",
-  "static/media/Steer2.jpg": "static/media/Steer2.265d89e0.jpg",
+  "static/media/Steer3.png": "static/media/Steer3.31959e44.png",
   "static/media/Steve.jpg": "static/media/Steve.1b4c8fce.jpg",
   "static/media/Terry.jpg": "static/media/Terry.2f0d7f35.jpg",
   "static/media/TimE.jpg": "static/media/TimE.eb8583ed.jpg",
@@ -44,5 +44,6 @@
   "static/media/Vick.jpg": "static/media/Vick.5cf7b66b.jpg",
   "static/media/Walls.jpg": "static/media/Walls.3bf1bffa.jpg",
   "static/media/eubank.jpg": "static/media/eubank.98f61b89.jpg",
+  "static/media/highschool.jpg": "static/media/highschool.9ecd32bb.jpg",
   "static/media/nortons.jpg": "static/media/nortons.7e886b7b.jpg"
 }
