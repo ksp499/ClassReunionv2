@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Redirect} from "react-router-dom";
 import API from "../utils/API";
 import { Link } from 'react-router-dom';
 
