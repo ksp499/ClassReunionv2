@@ -25,6 +25,14 @@ export default {
   saveComment: function(commentData) {
     return axios.post("/api/comments/", commentData);
   },
+  // Gets the comment with the given id
+  getComment: function(id) {
+    return axios.get("/api/comments/" + id);
+  },
+  // Updates the comment with the given id
+  updateComment: function(id, body) {
+    return axios.put("/api/comments/" + id, body);
+  },
   // Gets all comments
   getComments: function() {
     return axios.get("/api/comments/");

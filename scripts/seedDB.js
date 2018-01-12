@@ -24,8 +24,7 @@ const userSeed = [
 const commentSeed = [
   {
     commentBoxId: 999,
-    userName: "ksp499",
-    comment: "This is Kyeong"
+    comment_obj: []
   }
 ];
 

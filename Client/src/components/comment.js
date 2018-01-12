@@ -16,8 +16,13 @@ class Comments extends Component {
 
   loadComments = () => {
     API.getComments()
-      .then(res => console.log(res))
+      .then(res => {
+
+
+      })
       .catch(err => console.log(err));
+
+    API.updateComment(0, [1, 2]).then().catch();
   }
 
   addNewCommentBox() {
@@ -60,6 +65,10 @@ class CommentBox extends Component {
     console.log(this.state.commentBoxId);
     let comment = {id:this.state.commentId, author: 'me', text: commentText}
     this.setState({comments: this.state.comments.concat(comment)});
+
+    
+    API.getComment(this.state.commentBoxId).then(res => console.log(res)).catch();
+
 
     API.saveComment({
       commentBoxId: this.state.commentBoxId,
