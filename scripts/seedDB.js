@@ -23,9 +23,34 @@ const userSeed = [
 
 const commentSeed = [
   {
-    commentBoxId: 999,
-    userName: "ksp499",
-    comment: "This is Kyeong"
+    commentBoxId: 0,
+    comment_obj: [],
+    last_key: 0
+  },
+  {
+    commentBoxId: 1,
+    comment_obj: [],
+    last_key: 0
+  },
+  {
+    commentBoxId: 2,
+    comment_obj: [],
+    last_key: 0
+  },
+  {
+    commentBoxId: 3,
+    comment_obj: [],
+    last_key: 0
+  },
+  {
+    commentBoxId: 4,
+    comment_obj: [],
+    last_key: 0
+  },
+  {
+    commentBoxId: 5,
+    comment_obj: [],
+    last_key: 0
   }
 ];
 

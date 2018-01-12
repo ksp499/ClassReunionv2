@@ -11,7 +11,7 @@ module.exports = {
   },
   findById: function(req, res) {
     db.Comment
-      .findById(req.params.id)
+      .find({commentBoxId: req.params.id})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
@@ -22,11 +22,18 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
-    db.User
-      .findOneAndUpdate({ _id: req.params.id }, req.body)
+    db.Comment
+      .findOneAndUpdate({commentBoxId: req.params.id }, { $set: {comment_obj : req.body}})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+  updateKey: function(req, res) {
+    console.log(req.body);
+    db.Comment
+      .findOneAndUpdate({commentBoxId: req.params.id }, { $set: {last_key : req.body[0]}})
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },  
   remove: function(req, res) {
     db.Comment
       .findById({ _id: req.params.id })
