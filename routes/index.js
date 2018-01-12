@@ -28,6 +28,10 @@ router
   .get(commentsController.findById)
   .put(commentsController.update);
 
+router
+  .route("/api/comments/key/:id")
+  .put(commentsController.updateKey);
+
 // If no API routes are hit, send the React app
 router.use(function(req, res) {
   res.sendFile(path.join(__dirname, "../Client/public/index.html"));

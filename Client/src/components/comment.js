@@ -21,8 +21,6 @@ class Comments extends Component {
 
       })
       .catch(err => console.log(err));
-
-    API.updateComment(0, [1, 2]).then().catch();
   }
 
   addNewCommentBox() {
@@ -60,23 +58,21 @@ class CommentBox extends Component {
     };
   }
   handleOnSubmit(commentText) {
-    let newCommentId = this.state.commentId + 1;
-    this.setState({commentId: newCommentId});
-    console.log(this.state.commentBoxId);
-    let comment = {id:this.state.commentId, author: 'me', text: commentText}
-    this.setState({comments: this.state.comments.concat(comment)});
-
     
-    API.getComment(this.state.commentBoxId).then(res => console.log(res)).catch();
-
-
-    API.saveComment({
-      commentBoxId: this.state.commentBoxId,
-      userName: "me",
-      comment: commentText
-    })
-    .then()
-    .catch();
+    
+    
+    API.getComment(this.state.commentBoxId).then(res => {
+      let newCommentId = res.data[0].last_key + 1;
+      this.setState({commentId: newCommentId});
+      console.log(this.state.commentId);
+      let oldComments = [];
+      oldComments = res.data[0].comment_obj;
+      let comment = {id:this.state.commentId, author: 'me', text: commentText}
+      this.setState({comments: oldComments.concat(comment)});
+      API.updateComment(this.state.commentBoxId, this.state.comments).then().catch();
+      API.updateCommentKey(this.state.commentBoxId, [this.state.commentId]);
+    }).catch();
+    
   }  
   render() {
     return (

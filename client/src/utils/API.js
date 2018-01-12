@@ -33,6 +33,9 @@ export default {
   updateComment: function(id, body) {
     return axios.put("/api/comments/" + id, body);
   },
+  updateCommentKey: function(id, body) {
+    return axios.put("/api/comments/key/" + id, body);
+  },
   // Gets all comments
   getComments: function() {
     return axios.get("/api/comments/");
