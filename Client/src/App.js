@@ -6,6 +6,7 @@ import Gallery from "./components/ClassMate.js";
 import Main from "./mainPage.js";
 import Pgallery from "./components/ClassParents.js";
 import Faculty from "./components/Faculty.js";
+import API from "./utils/API";
 
 // if something is true, that means is logged in
 // send them to the Dashboard
@@ -13,7 +14,7 @@ import Faculty from "./components/Faculty.js";
 
 
 
-const isAuthenticated = true;//set to false when backend is complete comming back from server, not logged in
+let isAuthenticated = false;//set to false when backend is complete comming back from server, not logged in
 
 const PrivateRoute = ({component: Component, ...rest}) => {
     return (
@@ -26,6 +27,16 @@ const PrivateRoute = ({component: Component, ...rest}) => {
         />
     );
 };
+
+API.getLoggedInUser()
+   .then(res => {
+   	if(res.data.length > 0) {
+   		isAuthenticated = res.data[0].logged_in;
+   	}
+
+
+   })
+   .catch();
 
 class App extends React.Component {
 		state = {

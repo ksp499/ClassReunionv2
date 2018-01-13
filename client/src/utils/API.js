@@ -5,13 +5,8 @@ export default {
   getUsers: function() {
     return axios.get("/api/users");
   },
-  // Gets the book with the given id
-  getBook: function(id) {
-    return axios.get("/api/books/" + id);
-  },
-  // Deletes the book with the given id
-  deleteBook: function(id) {
-    return axios.delete("/api/books/" + id);
+  getLoggedInUser: function() {
+    return axios.get("/api/users/loggedin");
   },
   // Saves a user to the database
   saveUser: function(userData) {
@@ -20,6 +15,9 @@ export default {
   },
   validateUser: function(userName) {
     return axios.get("/api/users/" + userName);
+  },
+  updateLoginStatus: function(userName, body) {
+    return axios.put("api/users/" + userName, body);
   },
   // Saves a comment to the database
   saveComment: function(commentData) {

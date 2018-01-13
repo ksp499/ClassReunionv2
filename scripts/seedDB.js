@@ -17,7 +17,8 @@ const userSeed = [
     password: "123456",
     email: "ksp499@gmail.com",
     firstName: "Kyeong",
-    lastName: "Park"
+    lastName: "Park",
+    logged_in: false
   }
 ];
 

@@ -14,8 +14,13 @@ router
   .delete(usersController.remove);
 
 router
+  .route("/api/users/loggedin")
+  .get(usersController.findLoggedin);
+  
+router
   .route("/api/users/:id")
-  .get(usersController.findByUserName);
+  .get(usersController.findByUserName)
+  .put(usersController.updateLoginStatus);
 
 router
   .route("/api/comments")

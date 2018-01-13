@@ -9,6 +9,12 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+  findLoggedin: function(req, res) {
+    db.User
+      .find({"logged_in": true})
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
   findByUserName: function(req, res) {
     db.User
       .find({ userName: req.params.id})
@@ -21,9 +27,10 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  update: function(req, res) {
+  updateLoginStatus: function(req, res) {
+    console.log(req.body[0]);
     db.User
-      .findOneAndUpdate({ _id: req.params.id }, req.body)
+      .findOneAndUpdate({userName: req.params.id }, { $set: {logged_in : req.body[0]}})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

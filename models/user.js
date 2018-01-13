@@ -10,7 +10,8 @@ const userSchema = new Schema({
   address: String,
   city: String,
   state: String,
-  zipCode: String
+  zipCode: String,
+  logged_in: Boolean
 });
 
 const User = mongoose.model("User", userSchema);

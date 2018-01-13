@@ -21,6 +21,9 @@ class Login extends Component {
     API.validateUser(this.state.userName)
         .then(res => {
             if (res.data[0].password === this.state.password) {
+               API.updateLoginStatus(this.state.userName, [true])
+               .then()
+               .catch();
                this.state.isAuthenticated = true;
                console.log(this.props.ath);
             }
