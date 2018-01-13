@@ -17,17 +17,39 @@ class Comments extends Component {
   loadComments = () => {
     API.getComments()
       .then(res => {
+        let commentBox_size = 0;
+        for (let i = 0; i < res.data.length; i++) {
+          if (res.data[i].last_key !== 0) {
+              API.getComment(i)
+                .then(res => {
 
-
+                  let commentBox = <CommentBox key={i} id={i} comment_obj={res.data[0].comment_obj}/>
+                  this.setState({commentBoxes: this.state.commentBoxes.concat(commentBox)});
+                })
+                .catch(err => console.log(err));
+                commentBox_size++;
+          }
+          
+        }
+        this.setState({commentBoxId: commentBox_size});
       })
-      .catch(err => console.log(err));
+      .catch();
+    
   }
 
   addNewCommentBox() {
-    let newCommentBoxId = this.state.commentBoxId + 1;
+    let newCommentBoxId = this.state.commentBoxId;
     this.setState({commentBoxId: newCommentBoxId});
-    let commentBox = <CommentBox key={this.state.commentBoxId} id={this.state.commentBoxId}/>
-    this.setState({commentBoxes: this.state.commentBoxes.concat(commentBox)});
+    API.getComment(this.state.commentBoxId)
+      .then(res => {
+        let commentBox = <CommentBox key={this.state.commentBoxId} id={this.state.commentBoxId} comment_obj={res.data[0].comment_obj}/>
+        this.setState({commentBoxes: this.state.commentBoxes.concat(commentBox)});
+        newCommentBoxId = this.state.commentBoxId + 1;
+        this.setState({commentBoxId: newCommentBoxId});
+      })
+      .catch();
+    
+    
   }  
 
   render() {
@@ -54,17 +76,27 @@ class CommentBox extends Component {
     this.state = {
       comments: [],
       commentId: 0,
-      commentBoxId: props.id
+      commentBoxId: props.id,
+      comment_obj: props.comment_obj
     };
   }
+
+  componentDidMount() {
+    this.loadComments();
+  }
+
+  loadComments = () => {
+    if (this.state.comment_obj.length > 0) {
+      let oldComments = this.state.comment_obj;
+      this.setState({comments: this.state.comments.concat(oldComments)});
+    }
+  }
+
   handleOnSubmit(commentText) {
-    
-    
-    
+     
     API.getComment(this.state.commentBoxId).then(res => {
       let newCommentId = res.data[0].last_key + 1;
       this.setState({commentId: newCommentId});
-      console.log(this.state.commentId);
       let oldComments = [];
       oldComments = res.data[0].comment_obj;
       let comment = {id:this.state.commentId, author: 'me', text: commentText}
@@ -106,9 +138,9 @@ class CommentInput extends Component {
 
 class CommentList extends Component {
   render() {
-    let liComments = this.props.comments.map(function(comment) {
-                       return <Comment key={comment.id} author={comment.author} text={comment.text}/>;
-                     })
+    let  liComments = this.props.comments.map(function(comment) {
+                         return <Comment key={comment.id} author={comment.author} text={comment.text}/>;
+                       })
     return (
       <ul className="CommentList">
         {liComments}
